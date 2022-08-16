@@ -5,7 +5,7 @@ import logging
 import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
-#import pytest
+
 
 app = Flask(__name__)
 LOG = create_logger(app)
@@ -64,6 +64,7 @@ def predict():
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
     # TO DO:  Log the output prediction value
+    LOG.info(f"info: \n{prediction}")
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
