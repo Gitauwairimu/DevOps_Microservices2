@@ -21,4 +21,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward douh 8000:80
+kubectl port-forward douh 8070:80

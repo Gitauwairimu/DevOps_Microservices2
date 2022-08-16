@@ -12,4 +12,4 @@ docker images
 
 # Step 3: 
 # Run flask app
-docker run -p 8090:80 gitauwairimu/ml-microservice:v1.0.1
+docker run -p 8070:80 gitauwairimu/ml-microservice:v1.0.1
