@@ -48,3 +48,6 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Gitauwairimu/DevOps_Microservices2/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Gitauwairimu/DevOps_Microservices2/tree/master)
