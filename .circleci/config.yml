@@ -40,10 +40,10 @@ jobs:
             chmod +x hadolint
             sudo mv hadolint /bin/hadolint
 
-      - save_cache:
-          paths:
-            - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+      # - save_cache:
+      #     paths:
+      #       - ./venv
+      #     key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       # run tests!
       - run:
