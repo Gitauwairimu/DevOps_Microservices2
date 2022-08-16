@@ -35,8 +35,10 @@ jobs:
             cd project-ml-microservice-kubernetes
             make install
             #pip install -r requirements.txt
-            wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
-            sudo chmod +x /bin/hadolint
+            wget https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+            mv hadolint-Linux-x86_64 hadolint
+            chmod +x hadolint
+            mv hadoloint /bin/hadolint
 
       - save_cache:
           paths:
