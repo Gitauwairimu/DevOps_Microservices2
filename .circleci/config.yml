@@ -38,7 +38,7 @@ jobs:
             wget https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
             mv hadolint-Linux-x86_64 hadolint
             chmod +x hadolint
-            mv hadolint /bin/hadolint
+            sudo mv hadolint /bin/hadolint
 
       - save_cache:
           paths:
