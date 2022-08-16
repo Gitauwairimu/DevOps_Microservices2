@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="gitauwairimu/predict"
+dockerpath="gitauwairimu/ml-microservice:v1.0.1"
 
 # Step 2:  
 # Authenticate & tag
