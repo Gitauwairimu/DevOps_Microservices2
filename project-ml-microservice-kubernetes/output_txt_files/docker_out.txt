@@ -1,1 +1,3 @@
-<paste log output from Docker prediction, here>
+#<paste log output from Docker prediction, here>
+
+kubectl logs my-pod
