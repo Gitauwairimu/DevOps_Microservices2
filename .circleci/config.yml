@@ -60,8 +60,8 @@ jobs:
             cd project-ml-microservice-kubernetes
             make lint
 
-  eksDeploy:
-      - run:
-        name: Deploy Cluster and workload
-        command: |
-          ./run_kubernetes.sh
+  # eksDeploy:
+  #     - run:
+  #       name: Deploy Cluster and workload
+  #       command: |
+  #         ./run_kubernetes.sh
