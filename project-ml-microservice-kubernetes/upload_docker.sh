@@ -14,4 +14,4 @@ docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
 
 # Step 3:
 # Push image to a docker repository
-docker push dockerpath
+docker push $dockerpath
