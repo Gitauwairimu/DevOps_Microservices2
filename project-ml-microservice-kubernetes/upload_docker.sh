@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="gitauwairimu/ml-microservice:v1.0.1"
+dockerpath="gitauwairimu/ml-microservice"
 
 # Step 2:  
 # Authenticate & tag
