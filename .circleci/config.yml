@@ -67,8 +67,10 @@ jobs:
             ls
             cd project-ml-microservice-kubernetes
             lsb_release -a
-            sudo chmod +x ./docker_install.sh
-            ./docker_install.sh
+            curl -fsSL https://get.docker.com -o get-docker.sh
+            sudo ./get-docker.sh
+            #sudo chmod +x ./docker_install.sh
+            #./docker_install.sh
             docker version
 
   # eksDeploy:
