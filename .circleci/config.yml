@@ -69,6 +69,7 @@ jobs:
             sudo apt-get install ca-certificates
             sudo apt-get install lsb-release
             sudo mkdir -p /etc/apt/keyrings
+            sudo apt install apt-transport-https ca-certificates curl software-properties-common
             curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 
             ### Add Docker and docker compose support to the Ubuntu's packages list
