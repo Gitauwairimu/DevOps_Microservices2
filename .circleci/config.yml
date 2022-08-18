@@ -64,9 +64,7 @@ jobs:
           name: Docker Install
           command: |
             . venv/bin/activate
-            ls
-            cd project-ml-microservice-kubernetes
-            lsb_release -d
+            cat /etc/os-release
             curl -fsSL https://get.docker.com -o get-docker.sh
             sudo ./get-docker.sh
             #sudo chmod +x ./docker_install.sh
