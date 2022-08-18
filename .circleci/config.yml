@@ -64,13 +64,10 @@ jobs:
           name: Docker Install
           command: |
             . venv/bin/activate
-            cat /etc/os-release
-            curl -fsSL https://get.docker.com -o get-docker.sh
-            ls
-            chmod +x ./get-docker.sh
-            sudo ./get-docker.sh
-            #sudo chmod +x ./docker_install.sh
-            #./docker_install.sh
+            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+            sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+            sudo apt-get update
+            sudo apt install docker.io
             docker version
 
   # eksDeploy:
