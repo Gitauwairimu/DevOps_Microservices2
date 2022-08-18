@@ -68,6 +68,7 @@ jobs:
             cd project-ml-microservice-kubernetes
             sudo chmod +x ./docker_install.sh
             ./docker_install.sh
+            docker version
 
   # eksDeploy:
   #     - run:
