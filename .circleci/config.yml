@@ -68,39 +68,8 @@ jobs:
             . venv/bin/activate
             tips
 
-        - slack/notify:
-            event: fail
-            template: basic_fail_1
-            mentions: "@EngineeringTeam"
-
-      # - slack/notify:
-      #     channel: '#udacity-devops-class'
-      #     event: fail
-      #     template: basic_fail_1
-
-      # - slack/notify:
-      #     channel: '#udacity-devops-class'
-      #     event: always
-#...............................................
-
-      # - slack/notify:
-      #     channel: '#udacity-devops-class'
-      #     event: fail
-      #     custom: |
-      #       {
-      #         "blocks": [
-      #           {
-      #             "type": "section",
-      #             "text": {
-      #           	  "type": "mrkdwn",
-      #               "text": "*Job Failed!* :red_circle:\n>*Job:* $CIRCLE_JOB \n>*Link:* $CIRCLE_BUILD_URL \n\n>*Project:* $CIRCLE_PROJECT_REPONAME \n>*Branch:* $CIRCLE_BRANCH \n>*Author:* $CIRCLE_USERNAME"
-      #             }
-      #           }
-      #         ]
-      #       }
-
-  # eksDeploy:
-  #     - run:
-  #       name: Deploy Cluster and workload
-  #       command: |
-  #         ./run_kubernetes.sh
+      - slack/notify:
+          #event: fail
+          template: basic_fail_1
+          mentions: "@EngineeringTeam"
+          event: always
