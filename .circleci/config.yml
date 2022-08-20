@@ -68,9 +68,9 @@ jobs:
             . venv/bin/activate
             tips
 
-      - slack/status:
-          #event: fail
-          webhook: ${SLACK_WEBHOOK}
-          template: basic_fail_1
-          mentions: "@EngineeringTeam"
-          event: always
+      # - slack/notify:
+      #     #event: fail
+      #     webhook: ${SLACK_WEBHOOK}
+      #     template: basic_fail_1
+      #     mentions: "@EngineeringTeam"
+      #     event: always
