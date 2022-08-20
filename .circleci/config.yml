@@ -68,10 +68,26 @@ jobs:
             . venv/bin/activate
             tips
 
+      # - slack/notify:
+      #     channel: udacity-devops-class
+      #     event: fail
+      #     template: basic_fail_1
+
       - slack/notify:
-          channel: udacity-devops-class
+          channel: '#udacity-devops-class'
           event: fail
-          template: basic_fail_1
+          custom: |
+            {
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                	  "type": "mrkdwn",
+                    "text": "*Job Failed!* :red_circle:\n>*Job:* $CIRCLE_JOB \n>*Link:* $CIRCLE_BUILD_URL \n\n>*Project:* $CIRCLE_PROJECT_REPONAME \n>*Branch:* $CIRCLE_BRANCH \n>*Author:* $CIRCLE_USERNAME"
+                  }
+                }
+              ]
+            }
 
   # eksDeploy:
   #     - run:
